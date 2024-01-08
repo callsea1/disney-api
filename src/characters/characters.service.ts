@@ -7,7 +7,10 @@ const disneyUrl = 'https://api.disneyapi.dev/character';
 @Injectable()
 export class CharactersService {
   async create(createCharacterDto: CreateCharacterDto) {
-    return 'This action adds a new character';
+    console.log('createCharacter: ', createCharacterDto);
+    console.log('This action adds a new character');
+
+    return { success: true };
   }
 
   // this handles all GET search filters, too
